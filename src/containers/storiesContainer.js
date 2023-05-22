@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getStoryIds, getStory } from '../services/hackerNewsApi';
+import { getStoryIds } from '../services/hackerNewsApi';
 import { Story } from '../components/story';
 
 export const StoriesContainer = () => {
@@ -9,5 +9,5 @@ export const StoriesContainer = () => {
     getStoryIds().then(data => setStoryIds(data));
   }, []);
 
-  return storyIds.map(storyId => <Story storyId={storyId} />);
+  return storyIds.map(storyId => <Story key={storyId} storyId={storyId} />);
 };
