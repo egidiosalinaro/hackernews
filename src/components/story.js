@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { getStory } from '../services/hackerNewsApi';
+import {
+  StoryWrapper,
+  StoryTitle,
+  StoryMeta,
+  StoryMetaElement,
+} from '../styles/storyStyles';
 
 export const Story = ({ storyId }) => {
   const [story, setStory] = useState({});
@@ -9,12 +15,20 @@ export const Story = ({ storyId }) => {
   }, []);
 
   return story && story.url ? (
-    <>
-      <a href={story.url}>
-        <p>{story.title}</p>
-      </a>
-      By: <p>{story.by}</p>
-      Posted: <p>{story.time}</p>
-    </>
+    <StoryWrapper data-testid="story">
+      <StoryTitle>
+        <a href={story.url}>{story.title}</a>
+      </StoryTitle>
+      <StoryMeta>
+        <span className="story__by" data-testid="story-by">
+          <StoryMetaElement color="#000">By:</StoryMetaElement> {story.by}
+        </span>
+        <span className="story__time" data-testid="story-time">
+          <StoryMetaElement color="#000">Posted on:</StoryMetaElement>
+          {``}
+          {story.time}
+        </span>
+      </StoryMeta>
+    </StoryWrapper>
   ) : null;
 };
