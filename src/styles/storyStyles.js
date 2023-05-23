@@ -13,6 +13,10 @@ export const StoryWrapper = styled.section`
     margin-bottom: 0;
     padding-bottom: 0;
   }
+
+  &:nth-child(11) ~ section {
+    display: none;
+  }
 `;
 
 export const StoryTitle = styled.h1`
