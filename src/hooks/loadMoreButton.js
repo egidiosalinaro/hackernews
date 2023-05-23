@@ -1,5 +1,5 @@
 export const loadMoreButton = () => {
-  const loadMore = document.querySelector('button');
+  const loadMore = document.querySelector('#button');
   let currentItems = 10;
 
   loadMore.addEventListener('click', e => {
