@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { App } from './App';
-import { Button } from './components/button';
-import { loadMoreButton } from './hooks/loadMoreButton';
-import reportWebVitals from './reportWebVitals';
+import { App } from './App.js';
+import { Button } from './components/button.js';
+import { loadMoreButton } from './hooks/loadMoreButton.js';
+import reportWebVitals from './reportWebVitals.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

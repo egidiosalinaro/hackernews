@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonWrapper } from '../styles/buttonStyle';
+import { ButtonWrapper } from '../styles/buttonStyle.js';
 
 export const Button = () => (
   <ButtonWrapper>
