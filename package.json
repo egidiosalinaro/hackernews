@@ -22,7 +22,7 @@
       "!src/hooks/*.js",
       "!src/selectors/*.js",
       "!src/mappers/*.js",
-      "!src/utils/*.js"
+      "!src/utilities/*.js"
     ],
     "coverageThreshold": {
       "global": {
