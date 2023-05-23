@@ -1,6 +1,5 @@
 import { React } from 'react';
-import { act } from 'react-dom/test-utils';
-import { render, cleanup, waitForElement } from '@testing-library/react';
+import { render, cleanup, waitFor } from '@testing-library/react';
 import { App } from '../App';
 import { storyIds, singularStory } from '../fixtures';
 import { getStory, getStoryIds } from '../services/hackerNewsApi';
@@ -21,7 +20,7 @@ test('renders the application', async () => {
   getStoryIds.mockImplementation(() => Promise.resolve(storyIds));
 
   const { getByText, queryByTestId } = render(<App />);
-  await waitForElement(() => [
+  await waitFor(() => [
     expect(getByText('ciao sto facendo un test')).toBeTruthy(),
     expect(queryByTestId('story-by').textContent).toEqual(
       'By: Egidio Salinaro'
