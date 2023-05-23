@@ -106,4 +106,11 @@ export const ButtonWrapper = styled.button`
       display: block;
     }
   }
+
+  &.loaded {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility 0.3s 3s, opacity 0.3s 3s, height 0.3s 3s;
+  }
 `;
