@@ -5,7 +5,7 @@ export const StoryWrapper = styled.section`
   flex-direction: column;
   padding-top: 10px;
   margin-bottom: 20px;
-  border-top: 0.5px solid #cccccc;
+  border-top: 0.1px solid #cccccc;
 
   &:first-of-type {
     border-top: 0;
@@ -29,15 +29,14 @@ export const StoryTitle = styled.h1`
   text-decorazion: none;
 
   a {
-    color: #2e2e2c;
-    background-color: #f8dc3d;
+    color: white;
+    background-color: none;
     text-decoration: none;
   }
 `;
 
 export const StoryMeta = styled.div`
-  font-style: italic;
-
+  color: grey;
   > span:not(:first-child):before {
     content: '•';
     margin: 0 8px;
@@ -49,6 +48,10 @@ export const StoryMeta = styled.div`
 `;
 
 export const StoryMetaElement = styled.span`
+  color: ${props => props.color || 'grey'};
+`;
+
+export const StoryMetaElementAuthor = styled.span`
   font-weight: bold;
-  color: ${props => props.color || 'red'};
+  color: rgb(160, 158, 158);
 `;

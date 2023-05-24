@@ -15,7 +15,7 @@ body {
   padding: 0;
   line-height: 1;
   color: #202020;
-  background-color: #fafafe;
+  background-color: #202123;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
@@ -27,6 +27,7 @@ ul {
 `;
 
 export const StoriesContainerWrapper = styled.main`
+  color: white;
   max-width: 1140px;
   padding: 2px 15px;
   margin: auto;

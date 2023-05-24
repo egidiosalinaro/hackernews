@@ -5,6 +5,7 @@ import {
   StoryTitle,
   StoryMeta,
   StoryMetaElement,
+  StoryMetaElementAuthor,
 } from '../styles/storyStyles.js';
 import { mapTime } from '../mappers/time.js';
 
@@ -22,10 +23,12 @@ export const Story = memo(function Story({ storyId }) {
       </StoryTitle>
       <StoryMeta>
         <span className="story__by" data-testid="story-by">
-          <StoryMetaElement color="#000">By:</StoryMetaElement> {story.by}
+          <StoryMetaElementAuthor color="#000">
+            {story.by}
+          </StoryMetaElementAuthor>
         </span>
         <span className="story__time" data-testid="story-time">
-          <StoryMetaElement color="#000">Posted</StoryMetaElement>
+          <StoryMetaElement color="#000"></StoryMetaElement>
           {` `}
           {mapTime(story.time)} {`ago`}
         </span>
