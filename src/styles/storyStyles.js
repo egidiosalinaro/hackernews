@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const StoryWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
   padding-top: 10px;
   margin-bottom: 20px;
-  border-top: 1px solid #cccccc;
+  border-top: 0.5px solid #cccccc;
 
   &:first-of-type {
     border-top: 0;
@@ -38,7 +40,7 @@ export const StoryMeta = styled.div`
 
   > span:not(:first-child):before {
     content: '•';
-    margin: 0 7px;
+    margin: 0 8px;
   }
 
   .story_meta-bold {

@@ -10,7 +10,8 @@ export const ButtonWrapper = styled.button`
   text-transform: uppercase;
   background-color: black;
   color: white;
-  margin: 0 auto;
+  margin: auto;
+  margin-bottom: 25px;
   border-radius: 30px;
   transition: all 0.3s ease-out;
 

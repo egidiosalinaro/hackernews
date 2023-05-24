@@ -12,7 +12,7 @@ export const loadMoreButton = () => {
         if (elementList[i]) {
           elementList[i].style.display = 'flex';
         }
-      }, 3000);
+      }, 1000);
     }
     currentItems += 10;
 
