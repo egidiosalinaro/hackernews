@@ -2,10 +2,15 @@ import styled from 'styled-components';
 
 export const StoryWrapper = styled.section`
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 10px;
   margin-bottom: 20px;
   border-top: 0.1px solid #cccccc;
+
+  img {
+    margin-right: 5px;
+  }
 
   &:first-of-type {
     border-top: 0;
@@ -30,20 +35,20 @@ export const StoryTitle = styled.h1`
 
   a {
     color: white;
-    background-color: none;
     text-decoration: none;
+    font-weight: 400;
   }
 `;
 
 export const StoryMeta = styled.div`
   color: grey;
+  font-weight: 100;
+
   > span:not(:first-child):before {
     content: '•';
-    margin: 0 8px;
-  }
+    font-weight: 500;
 
-  .story_meta-bold {
-    font-weight: bold;
+    margin: 0 8px;
   }
 `;
 
@@ -52,6 +57,9 @@ export const StoryMetaElement = styled.span`
 `;
 
 export const StoryMetaElementAuthor = styled.span`
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 14px;
+
+  font-style: italic;
   color: rgb(160, 158, 158);
 `;

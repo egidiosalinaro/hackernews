@@ -5,6 +5,7 @@ import {
   GlobalStyle,
   StoriesContainerWrapper,
 } from '../styles/containerStyle.js';
+import Header from '../components/header.js';
 
 export const StoriesContainer = () => {
   const [storyIds, setStoryIds] = useState([]);
@@ -16,8 +17,8 @@ export const StoriesContainer = () => {
   return (
     <>
       <GlobalStyle />
+      <Header />
       <StoriesContainerWrapper data-test-id="stories-container">
-        <h1>Hacker News</h1>
         {storyIds.map(storyId => (
           <Story key={storyId} storyId={storyId} />
         ))}
