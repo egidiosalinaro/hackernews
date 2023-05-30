@@ -21,7 +21,7 @@ export const StoryWrapper = styled.section`
     padding-bottom: 0;
   }
 
-  &:nth-child(11) ~ section {
+  &:nth-child(10) ~ section {
     display: none;
   }
 `;
