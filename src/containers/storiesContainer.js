@@ -5,7 +5,8 @@ import {
   GlobalStyle,
   StoriesContainerWrapper,
 } from '../styles/containerStyle.js';
-import Header from '../components/header.js';
+import { Header } from '../components/header.js';
+import { Button } from '../components/button.js';
 
 export const StoriesContainer = () => {
   const [storyIds, setStoryIds] = useState([]);
@@ -23,6 +24,7 @@ export const StoriesContainer = () => {
           <Story key={storyId} storyId={storyId} />
         ))}
       </StoriesContainerWrapper>
+      <Button />
     </>
   );
 };

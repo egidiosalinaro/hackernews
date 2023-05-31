@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { HeaderStyle } from '../styles/headerStyle.js';
 
-export default function Header() {
+export const Header = () => {
   const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
@@ -25,4 +25,4 @@ export default function Header() {
       </div>
     </HeaderStyle>
   );
-}
+};
