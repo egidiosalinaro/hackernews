@@ -7,6 +7,7 @@ import {
 } from '../styles/containerStyle.js';
 import { Header } from '../components/header.js';
 import { Button } from '../components/button.js';
+import { loadMoreButton } from '../hooks/loadMoreButton.js';
 
 export const StoriesContainer = () => {
   const [storyIds, setStoryIds] = useState([]);
@@ -19,7 +20,10 @@ export const StoriesContainer = () => {
     <>
       <GlobalStyle />
       <Header />
-      <StoriesContainerWrapper data-test-id="stories-container">
+      <StoriesContainerWrapper
+        onLoad={loadMoreButton}
+        data-test-id="stories-container"
+      >
         {storyIds.map(storyId => (
           <Story key={storyId} storyId={storyId} />
         ))}
