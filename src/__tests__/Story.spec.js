@@ -20,8 +20,6 @@ test('renders the application', async () => {
   await waitFor(() => [
     expect(queryByTestId('story')).toBeTruthy(),
     expect(getByText('ciao sto facendo un test')).toBeTruthy(),
-    expect(queryByTestId('story-by').textContent).toEqual(
-      'By: Egidio Salinaro'
-    ),
+    expect(queryByTestId('story-by').textContent).toEqual('Egidio Salinaro'),
   ]);
 });
