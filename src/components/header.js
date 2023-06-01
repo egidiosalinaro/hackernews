@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { HeaderStyle } from '../styles/headerStyle.js';
+import NewStories from '../img/loadmore.png';
 
 export const Header = () => {
   const [sticky, setSticky] = useState(false);
@@ -20,7 +21,10 @@ export const Header = () => {
         <h2>by Egidio Salinaro</h2>
         <span>•</span>
         <h5>
-          <a href=".">refresh stories</a>
+          <a href=".">
+            <img src={NewStories} alt="load more" width={12} />
+            new stories
+          </a>
         </h5>
       </div>
     </HeaderStyle>

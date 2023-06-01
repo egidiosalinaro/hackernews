@@ -1,23 +1,44 @@
 import styled from 'styled-components';
 
+export const Footer = styled.footer`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  background-color: #0f0f0f;
+
+  &.more {
+    box-shadow: 0px -5px 15px rgba(214, 159, 114, 0.3);
+    z-index: 1000;
+  }
+`;
+
 export const ButtonWrapper = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  border: none;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+
+  margin: 15px auto;
   width: 180px;
   height: 52px;
-  text-transform: uppercase;
-  background-color: black;
-  color: white;
-  margin: auto;
-  margin-bottom: 25px;
-  border-radius: 30px;
-  transition: all 0.3s ease-out;
+
+  background-color: transparent;
+  color: rgb(214, 159, 114);
 
   &:hover {
-    background-color: grey;
-    color: inherit;
+    border-radius: 10px;
+    background-color: #1c1c1c;
+  }
+
+  img {
+    margin-right: 10px;
   }
 
   .loading {
@@ -59,22 +80,6 @@ export const ButtonWrapper = styled.button`
     }
   }
 
-  .loading span::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 32px;
-    height: 32px;
-    border: 3px solid transparent;
-    border-top: 3px solid white;
-    border-radius: 50%;
-    animation: loader3 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
-  }
-
   @keyframes loader3 {
     from {
       transform: rotate(0deg);
@@ -94,14 +99,18 @@ export const ButtonWrapper = styled.button`
     right: 0;
     width: 32px;
     height: 32px;
-    border: 3px solid grey;
+    border: 2px solid rgb(214, 159, 114);
     border-radius: 50%;
   }
 
   &.show-loader {
     width: 52px;
-    background-color: white;
+    background-color: transparent;
     text-indent: -9999px;
+
+    img {
+      display: none;
+    }
 
     & .loading {
       display: block;

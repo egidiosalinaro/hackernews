@@ -15,9 +15,8 @@ body {
   padding: 0;
   line-height: 1;
   color: #202020;
-  background-color: #202123;
+  background-color: #0F0F0F;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
 }
 
 ul {
