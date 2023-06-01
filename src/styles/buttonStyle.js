@@ -51,10 +51,10 @@ export const ButtonWrapper = styled.button`
 
   @keyframes loader1 {
     from {
-      rotate: 0deg;
+      transform: rotate(0deg);
     }
     to {
-      rotate: 360deg;
+      transform: rotate(360deg);
     }
   }
 
@@ -73,19 +73,19 @@ export const ButtonWrapper = styled.button`
 
   @keyframes loader2 {
     from {
-      rotate: 0deg;
+      transform: rotate(0deg);
     }
     to {
-      rotate: 360deg;
+      transform: rotate(360deg);
     }
   }
 
   @keyframes loader3 {
     from {
-      rotate: 0deg;
+      transform: rotate(0deg);
     }
     to {
-      rotate: 360deg;
+      transform: rotate(360deg);
     }
   }
 
