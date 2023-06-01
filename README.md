@@ -7,7 +7,6 @@
     <br />
     <a href="https://hackernews-api-react-egidiosalinaro.netlify.app/">Try the app!</a>
   </p>
-</div>
 
 
 
