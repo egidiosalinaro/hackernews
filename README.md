@@ -90,6 +90,10 @@ You need to have Node and npm installed. You can check the version you have inst
   npm -v
   ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 ### Installation :gear:
 
 Once downloaded this repo, in the project directory, you can run:
@@ -115,6 +119,8 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
