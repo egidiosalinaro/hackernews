@@ -5,7 +5,7 @@ export const HeaderStyle = styled.header`
   background-color: #0f0f0f;
   position: sticky;
   top: 0px;
-  transition: 0.3s;
+  transition: 0.5s;
 
   img {
     margin: 0 4px -2px 0;

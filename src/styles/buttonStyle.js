@@ -8,6 +8,7 @@ export const Footer = styled.footer`
   position: sticky;
   bottom: 0;
   background-color: #0f0f0f;
+  transition: 0.5s;
 
   &.more {
     box-shadow: 0px -5px 15px rgba(214, 159, 114, 0.3);
