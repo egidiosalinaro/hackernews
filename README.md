@@ -3,9 +3,9 @@
   <h1 align="center">HackerNews</h1>
 
   <p align="center">
-    An awesome Tech News Reader powered with <a href="https://github.com/HackerNews/API" target:"_blank"><strong>Hacker News</strong></a> service.
+    An awesome Tech News Reader powered with <a href="https://github.com/HackerNews/API" target="_blank"><strong>Hacker News</strong></a> service.
     <br />
-    <a href="https://hackernews-api-react-egidiosalinaro.netlify.app/">Try the app!</a>
+    <a href="https://hackernews-api-react-egidiosalinaro.netlify.app/" target="_blank">Try the app!</a>
   </p>
 
 
