@@ -44,7 +44,7 @@
   <img width="800" alt="hackernews-by-egidiosalinaro" src="https://github.com/egidiosalinaro/hackernews/assets/129901135/e2dfcf14-f30e-4876-917d-aa930ee4f9b8">
 <p>
 <br>
-The goal of the project is to develop an application to democratize the sharing of information in the tech field, through the use of the <strong>Hacker News</strong> service.
+The goal of the project is delivering an application to democratize the sharing of information in the tech field, through the use of the <strong>Hacker News</strong> service.
   
 At its startup the application displays the list of the latest news available by showing title, link, author and date of the story. Then it contacts APIs of the external Hacker News service to retrieve the list of latest news IDs. For each ID, the application recalls another API of the Hacker News service to obtain the information to be displayed such as the title, link, author and date of the news.
 
